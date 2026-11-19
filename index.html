@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f0f0f">
+<title>Buscador de repuestos</title>
+<style>
+  :root{--bg:#0f0f0f;--card:#171717;--input:#2b2b2b;--line:#3a3a3a;--text:#f2f2f2;--muted:#a0a0a0;--accent:#b04fa3}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:720px;margin:0 auto;padding:16px}
+  label{display:block;font-size:14px;margin-bottom:8px}
+  input[type=search]{width:100%;padding:14px 16px;font-size:16px;color:var(--text);background:var(--input);border:1px solid var(--line);border-radius:10px;outline:none;-webkit-appearance:none}
+  input[type=search]:focus{border-color:var(--accent)}
+  .hint{font-size:12px;color:var(--muted);margin:8px 0 14px}
+  .meta{font-size:12px;color:var(--muted);margin:0 0 10px}
+  .empty{color:var(--muted);text-align:center;padding:28px 8px}
+  .card{background:var(--card);border:1px solid var(--accent);border-radius:12px;padding:16px;margin-bottom:14px}
+  .tag{color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.06em;margin-bottom:12px}
+  .head{display:flex;gap:14px;align-items:center}
+  .photo{flex:none;width:92px;height:92px;border-radius:10px;background:#fff;object-fit:contain;cursor:zoom-in}
+  .name{font-size:16px;font-weight:700;margin:0 0 4px;word-break:break-word}
+  .sub{font-size:12px;color:var(--muted);margin:0}
+  hr{border:0;border-top:1px solid var(--line);margin:14px 0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 12px}
+  .grid .full{grid-column:1 / -1}
+  .k{display:block;font-size:11px;color:var(--muted);margin-bottom:2px}
+  .v{font-weight:700;font-size:15px;word-break:break-word}
+  .obs{font-size:13px;color:var(--muted)}
+  .obs b{color:var(--text);font-weight:600}
+  footer{font-size:11px;color:var(--muted);text-align:center;margin:18px 0 6px}
+  #zoom{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;padding:16px;z-index:10;cursor:zoom-out}
+  #zoom img{max-width:100%;max-height:100%;border-radius:8px;background:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <label for="q">Buscar repuesto por nombre, número, ID o equipo</label>
+  <input id="q" type="search" placeholder="Ej. ADJ. TOOL FOR GRIPPER..." autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+  <p class="hint">Puedes escribir solo una parte (una palabra, un código incompleto o un equipo, como p512).</p>
+  <p class="meta" id="meta"></p>
+  <div id="out"><p class="empty">Cargando inventario…</p></div>
+  <footer id="upd"></footer>
+</div>
+<div id="zoom"><img alt=""></div>
+
+<script>
+const $ = s => document.querySelector(s);
+let items = [];
+
+const norm = s => String(s ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const dash = v => { v = (v === null || v === undefined) ? "" : String(v).trim(); return v === "" ? "—" : v; };
+const NOFOTO = "data:image/svg+xml," + encodeURIComponent(
+  "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 92 92'><rect width='92' height='92' fill='#2b2b2b'/>" +
+  "<text x='46' y='58' font-size='34' text-anchor='middle' fill='#777' font-family='sans-serif'>?</text></svg>");
+
+function cantidad(v){
+  if (v === "" || v === null || v === undefined) return "—";
+  const n = Number(v);
+  if (!isNaN(n)) return n + (n === 1 ? " unidad" : " unidades");
+  return String(v);
+}
+
+function card(it){
+  const src = it.foto ? "fotos/" + encodeURIComponent(it.foto) : NOFOTO;
+  return `
+  <div class="card">
+    <div class="tag">RESULTADO DE BÚSQUEDA</div>
+    <div class="head">
+      <img class="photo" src="${src}" data-full="${it.foto ? src : ""}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${NOFOTO}';this.dataset.full=''">
+      <div>
+        <p class="name">${esc(it.nombre)}</p>
+        <p class="sub">Número: ${esc(dash(it.numero))}</p>
+        <p class="sub">ID: ${esc(dash(it.id))}</p>
+      </div>
+    </div>
+    <hr>
+    <div class="grid">
+      <div><span class="k">Cantidad</span><span class="v">${esc(cantidad(it.cantidad))}</span></div>
+      <div><span class="k">Equipo</span><span class="v">${esc(dash(it.equipo))}</span></div>
+      <div><span class="k">Closet</span><span class="v">${esc(dash(it.closet))}</span></div>
+      <div><span class="k">Estante</span><span class="v">${esc(dash(it.estante))}</span></div>
+      <div class="full"><span class="k">Caja</span><span class="v">${esc(dash(it.caja))}</span></div>
+    </div>
+    <hr>
+    <div class="obs">Observación: <b>${esc(dash(it.observacion))}</b></div>
+  </div>`;
+}
+
+function render(){
+  const q = norm($("#q").value).trim();
+  const out = $("#out"), meta = $("#meta");
+  if (!q){
+    meta.textContent = items.length + " repuestos en el inventario";
+    out.innerHTML = '<p class="empty">Escribe un nombre, número, ID o equipo para buscar.</p>';
+    return;
+  }
+  const words = q.split(/\s+/);
+  const res = items.filter(it => words.every(w => it._h.includes(w)));
+  if (!res.length){
+    meta.textContent = "";
+    out.innerHTML = '<p class="empty">No se encontró ningún repuesto.</p>';
+    return;
+  }
+  meta.textContent = res.length + (res.length === 1 ? " resultado" : " resultados");
+  out.innerHTML = res.map(card).join("");
+}
+
+async function load(){
+  try{
+    const r = await fetch("inventario.json?t=" + Date.now(), {cache: "no-store"});
+    if (!r.ok) throw new Error(r.status);
+    const d = await r.json();
+    items = (d.items || []).map(it => ({...it, _h: norm([it.nombre, it.numero, it.id, it.equipo].join(" "))}));
+    $("#upd").textContent = d.actualizado ? "Inventario actualizado: " + d.actualizado : "";
+    render();
+  }catch(e){
+    if (!items.length) $("#out").innerHTML = '<p class="empty">No se pudo cargar el inventario. Intenta de nuevo en un momento.</p>';
+  }
+}
+
+$("#q").addEventListener("input", render);
+document.addEventListener("click", e => {
+  const img = e.target.closest(".photo");
+  if (img && img.dataset.full){ $("#zoom img").src = img.dataset.full; $("#zoom").style.display = "flex"; }
+  else if (e.target.closest("#zoom")) $("#zoom").style.display = "none";
+});
+document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+setInterval(load, 300000);
+load();
+</script>
+</body>
+</html>
