@@ -9,19 +9,33 @@
   /* =====================================================
      COLORES Y MEDIDAS  ->  cambia aqui el aspecto general
      ===================================================== */
-  :root{
-    --accent:#023E73;          /* color principal (morado) */
-    --accent-soft:rgba(176,79,163,.16);
-    --bg:#0e0e11;              /* fondo de la pagina */
-    --card:#17171c;            /* fondo de las tarjetas */
-    --input:#23232a;           /* fondo del buscador */
-    --line:#04BF8A;            /* lineas y bordes */
-    --text:#f4f4f6;            /* texto principal */
-    --muted:#9a9aa6;           /* texto secundario */
-    --ok:#3ecf8e; --warn:#f5b53d; --bad:#ef5b5b;   /* stock: normal, bajo, agotado */
-    --radius:16px;             /* redondeo de las tarjetas */
-    --max:760px;               /* ancho maximo del contenido */
-  }
+:root {
+    /* Colores principales */
+    --accent: #043F8C;
+    --accent-soft: rgba(4, 196, 217, 0.16);
+
+    /* Fondos */
+    --bg: #0B1524;
+    --card: #12243A;
+    --input: #1B3048;
+
+    /* Bordes */
+    --line: rgba(4, 196, 217, 0.35);
+
+    /* Textos */
+    --text: #F4F8FC;
+    --muted: #A5B6C9;
+
+    /* Estados del inventario */
+    --ok: #04BF8A;
+    --warn: #84BF04;
+    --bad: #EF5B5B;
+
+    /* Estructura */
+    --radius: 16px;
+    --max: 760px;
+}
+
   @media (prefers-color-scheme: light){
     :root{--bg:#f5f4f7;--card:#ffffff;--input:#ffffff;--line:#e3e1e8;--text:#1b1b20;--muted:#6b6b78;--accent-soft:rgba(176,79,163,.12)}
     .photo{box-shadow:0 0 0 1px var(--line)}
