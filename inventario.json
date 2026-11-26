@@ -1,5 +1,5 @@
 {
-"actualizado":"19/11/2026 14:33",
+"actualizado":"26/11/2026 15:23",
 "items":[
 {"nombre":"Fusible 3,2 A","numero":"","id":"","cantidad":43,"equipo":"General","closet":"Izquierdo","estante":1,"caja":"Caja azul \"Fusibles\"","observacion":"","foto":""},
 {"nombre":"Fusibles 5 A","numero":"35-006","id":"","cantidad":32,"equipo":"General","closet":"Izquierdo","estante":1,"caja":"Caja azul \"Fusibles\"","observacion":"","foto":""},
@@ -175,7 +175,7 @@
 {"nombre":"KIT MAINTENANCE COBAS P612 EACH 0,5 YEAR","numero":"9286705001","id":"09286713001R","cantidad":1,"equipo":"cobas p 612 LCP1","closet":"izquierdo","estante":3,"caja":"caja \"variedad p.a\"","observacion":"","foto":""},
 {"nombre":"KIT MAINTENANCE COBAS P512 EACH 3 YEAR","numero":"9286675001","id":"09286683001R","cantidad":1,"equipo":"cobas p 512 LCP1","closet":"izquierdo","estante":3,"caja":"caja \"variedad p.a\"","observacion":"","foto":""},
 {"nombre":".","numero":"","id":"","cantidad":1,"equipo":"","closet":"izquierdo","estante":3,"caja":"bolsa negra \"tarjetas 1\"","observacion":"","foto":""},
-{"nombre":"LINEAR GUIDE X-AXIS OS","numero":"7951400001","id":"38246","cantidad":1,"equipo":"cobas p 512 LCP1\ncobas p 612 LCP1","closet":"izquierdo","estante":3,"caja":"caja original","observacion":"","foto":""},
+{"nombre":"LINEAR GUIDE X-AXIS OS","numero":"7951400001","id":"38246","cantidad":0,"equipo":"cobas p 512 LCP1\ncobas p 612 LCP1","closet":"izquierdo","estante":3,"caja":"caja original","observacion":"","foto":""},
 {"nombre":"MOD KIT PTT HOLDER COBAS P 612","numero":"9936858001","id":"9936866001","cantidad":"","equipo":"cobas p 612 LCP1","closet":"izquierdo","estante":3,"caja":"caja \"holder p612\"","observacion":"","foto":""},
 {"nombre":"PCB TEMP-DRV","numero":"7798733001","id":"798-5025","cantidad":1,"equipo":"cobas e 801","closet":"izquierdo","estante":3,"caja":"caja original","observacion":"","foto":""},
 {"nombre":".","numero":"","id":"","cantidad":1,"equipo":"p 512, p 612","closet":"izquierdo","estante":2,"caja":"caja pcb temp drv","observacion":"","foto":""},
@@ -207,7 +207,7 @@
 {"nombre":"POWER SUPPLY DC JWS 100/ 5","numero":"12023288001","id":"K621819","cantidad":1,"equipo":"p 512 p 612 MODULAR Pre Analytics\nMPA_CoreTransportLine\nMPA_Destopper\nMPA_InputBuffer\nMPA_OfflineAliquoter\nMPA_OnlineAliquoter\nMPA_OutputBuffer\nMPA_Restopper\nMPA_SampleBufferUnit\nMPA_SampleSorter\nMPA_UnivConnectionLine","closet":"izquierdo","estante":4,"caja":"caja original blanca","observacion":"","foto":""},
 {"nombre":".","numero":"","id":"","cantidad":1,"equipo":"","closet":"izquierdo","estante":4,"caja":"caja original blanca","observacion":"","foto":""},
 {"nombre":"VACUUM MODULE","numero":"8239681001","id":"727-1260","cantidad":2,"equipo":"cobas c 501\ncobas c 502","closet":"izquierdo","estante":4,"caja":"caja original","observacion":"","foto":""},
-{"nombre":"Filtros microbiologicos","numero":"","id":"","cantidad":4,"equipo":"","closet":"izquierdo","estante":4,"caja":"caja original","observacion":"","foto":""},
+{"nombre":"Filtros microbiologicos","numero":"","id":"","cantidad":0,"equipo":"","closet":"izquierdo","estante":4,"caja":"caja original","observacion":"","foto":""},
 {"nombre":"Raqueta filtros microbiologicos","numero":"","id":"","cantidad":1,"equipo":"","closet":"izquierdo","estante":4,"caja":"N/A","observacion":"","foto":""},
 {"nombre":"PCB DMS 24V / 66W 10TE","numero":"7937717001","id":"16999039868","cantidad":1,"equipo":"cobas p 471\ncobas p 512\ncobas p 612\ncobas p 671","closet":"izquierdo","estante":3,"caja":"caja \"tarjetas 2\"","observacion":"","foto":""},
 {"nombre":"PCB ASSY U-COM1","numero":"4774850001","id":"614-5016","cantidad":1,"equipo":"","closet":"izquierdo","estante":3,"caja":"bolsa negra \"tarjetas 1\"","observacion":"","foto":""},
@@ -260,17 +260,17 @@
 {"nombre":"NOZZLE R (MAIN UNIT) S 2 ASSY","numero":"09717676001","id":"798-9165","cantidad":1,"equipo":"cobas e 801\ncobas i 601","closet":"derecho","estante":2,"caja":"caja orriginal","observacion":"gris, usada","foto":""},
 {"nombre":"PROBE SAMPLE","numero":"08245401001","id":"727-0595","cantidad":1,"equipo":"cobas c 501\ncobas c 502","closet":"derecho","estante":2,"caja":"original","observacion":"","foto":""},
 {"nombre":"NOZZLE S (MAIN UNIT) SP A ASSY","numero":"09394583001","id":"798-9151","cantidad":3,"equipo":"cobas e 402\ncobas e 801","closet":"derecho","estante":2,"caja":"original","observacion":"Una nueva, dos usadas sin empaque","foto":""},
-{"nombre":"NOZZLE SIP (MAIN UNIT) S ASSY","numero":"07834985001","id":"798-9236","cantidad":2,"equipo":"cobas e 801","closet":"derecho","estante":2,"caja":"","observacion":"","foto":""},
+{"nombre":"NOZZLE SIP (MAIN UNIT) S ASSY","numero":"07834985001","id":"798-9236","cantidad":4,"equipo":"cobas e 801","closet":"derecho","estante":2,"caja":"","observacion":"Dos usados, dos nuevos","foto":""},
 {"nombre":"NOZZLE(A) S ASSY","numero":"09812024001","id":"731-0329","cantidad":5,"equipo":"cobas 8000 / ISE Module\ncobas c 701\ncobas c 702","closet":"derecho","estante":2,"caja":"original","observacion":"","foto":""},
 {"nombre":"NOZZLE R N ASSY","numero":"05778964001","id":"731-0328","cantidad":2,"equipo":"cobas c 701\ncobas c 702","closet":"derecho","estante":2,"caja":"original","observacion":"versión anterior","foto":""},
-{"nombre":"PROBE S1 ASSY","numero":"07712359001","id":"791-7104","cantidad":4,"equipo":"cobas c 513","closet":"derecho","estante":2,"caja":"original","observacion":"","foto":""},
+{"nombre":"PROBE S1 ASSY","numero":"07712359001","id":"791-7104","cantidad":3,"equipo":"cobas c 513","closet":"derecho","estante":2,"caja":"original","observacion":"","foto":""},
 {"nombre":"PROBE R ASSY","numero":"07712367001","id":"791-7107","cantidad":3,"equipo":"cobas c 513","closet":"derecho","estante":2,"caja":"original","observacion":"","foto":""},
 {"nombre":"ASP ASSY NO. 8","numero":"","id":"","cantidad":1,"equipo":"XN 10","closet":"IZQUIERDO","estante":2,"caja":"CAJA ORIGINAL","observacion":"NUEVO","foto":""},
 {"nombre":"LIGHT BARRIER DET-C4 PI ASSY","numero":"03735940001","id":"727-5034","cantidad":"Varios","equipo":"cobas 6000 core unit\ncobas 8000 / ISE Module\ncobas 8000 core unit\ncobas c 311\ncobas c 501\ncobas c 502\ncobas c 503 drive line\ncobas c 503 transportation line\ncobas c 513\ncobas c 701\ncobas c 702\ncobas c 703\ncobas e 402\ncobas e 602\ncobas e 801\ncobas e 801 drive line\ncobas e 801 MSB/MSBL\ncobas ISE neo 1800\ncobas ISE neo 900\ncobas pro ISE analytical unit\ncobas pro sample buffer unit\ncobas pro sample supply unit\ncobas pro SB\ncobas pro SBL c 503\ncobas pro SBL e 801\ncobas pro SSU","closet":"izquierdo","estante":4,"caja":"caja azul \"sensores\"","observacion":"usados","foto":""},
-{"nombre":"REFLECTIVE SENSOR PSR 50 LA","numero":"11905422001","id":"16031304001","cantidad":1,"equipo":"cobas p 312\ncobas p 471\ncobas p 471 LCP1\ncobas p 512\ncobas p 512 LCP1\ncobas p 612\ncobas p 612 LCP1\ncobas p 671\ncobas p 671 LCP1","closet":"izquierdo","estante":3,"caja":"\"variedad p.a\"","observacion":"nuevo","foto":""},
+{"nombre":"REFLECTIVE SENSOR PSR 50 LA","numero":"11905422001","id":"16031304001","cantidad":0,"equipo":"cobas p 312\ncobas p 471\ncobas p 471 LCP1\ncobas p 512\ncobas p 512 LCP1\ncobas p 612\ncobas p 612 LCP1\ncobas p 671\ncobas p 671 LCP1","closet":"izquierdo","estante":3,"caja":"\"variedad p.a\"","observacion":"nuevo","foto":""},
 {"nombre":"TOOL GRIPPER ADJUSTMENT","numero":"11802941001","id":"741-1471","cantidad":1,"equipo":"cobas e 402\ncobas e 602\ncobas e 801\ncobas i 601","closet":"izquierdo","estante":3,"caja":"caja opaca \"jigs\"","observacion":"","foto":""},
 {"nombre":"TOOL R CELL ADJUSTING","numero":"07735898001","id":"791-1831","cantidad":2,"equipo":"cobas c 503\ncobas c 513\ncobas c 703","closet":"izquierdo","estante":3,"caja":"caja opaca \"jigs\"","observacion":"","foto":""},
-{"nombre":"TOOL CELL CENTER ADJUSTING","numero":"07735880001","id":"791-1830","cantidad":1,"equipo":"cobas c 503\ncobas c 513\ncobas c 703","closet":"izquierdo","estante":3,"caja":"caja opaca \"jigs\"","observacion":"","foto":""},
+{"nombre":"TOOL CELL CENTER ADJUSTING","numero":"07735880001","id":"791-1830","cantidad":1,"equipo":"cobas c 503\ncobas c 513\ncobas c 703","closet":"izquierdo","estante":3,"caja":"caja opaca \"jigs\"","observacion":"RDK -> 731-2010 ; 05218942001 TOOL SET R PROBE","foto":""},
 {"nombre":"TOOL GRIPPER ADJUSTMENT (3)","numero":"05083737001","id":"741-8743","cantidad":1,"equipo":"cobas e 411\ncobas e 801","closet":"izquierdo","estante":3,"caja":"caja opaca \"jigs\"","observacion":"","foto":""},
 {"nombre":"JIG PREWASH SIPPER","numero":"07791119001","id":"788-9888","cantidad":1,"equipo":"cobas e 801","closet":"izquierdo","estante":3,"caja":"caja opaca \"jigs\"","observacion":"","foto":""},
 {"nombre":"JIG TIP DUMMY","numero":"07791046001","id":"788-2562","cantidad":1,"equipo":"cobas e 402\ncobas e 801","closet":"izquierdo","estante":3,"caja":"caja opaca \"jigs\"","observacion":"","foto":""},
@@ -305,6 +305,6 @@
 {"nombre":"Transducer Brush","numero":"","id":"","cantidad":1,"equipo":"XN 10","closet":"izquierdo","estante":1,"caja":"caja zul \"variedad\"","observacion":"","foto":""},
 {"nombre":"HEAT CUT FILTER","numero":"04904630001","id":"727-1610","cantidad":1,"equipo":"cobas c 303\ncobas c 311\ncobas c 501\ncobas c 502\ncobas c 503\ncobas c 513\ncobas c 701\ncobas c 702","closet":"izquierdo","estante":1,"caja":"caja azul \"cajas varias 3\"","observacion":"","foto":""},
 {"nombre":"BARCODE READER XN10","numero":"","id":"","cantidad":1,"equipo":"XN 10","closet":"IZQUIERDO","estante":3,"caja":"CAJA TRANSPARENTE \"VARIEDAD HEMATO\"","observacion":"","foto":""},
-{"nombre":"holaa","numero":"","id":"","cantidad":"","equipo":"","closet":"","estante":"","caja":"","observacion":"","foto":""}
+{"nombre":"BELT X1 (CR)","numero":"6342639001","id":"734-3343","cantidad":1,"equipo":"cobas c 502\ncobas c 701 MSB","closet":"izquierdo","estante":1,"caja":"caja azul \"variedad\"","observacion":"","foto":"734-3343.jpg"}
 ]
 }
