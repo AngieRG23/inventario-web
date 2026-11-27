@@ -1,5 +1,5 @@
 {
-"actualizado":"27/11/2026 10:14",
+"actualizado":"27/11/2026 10:18",
 "items":[
 {"nombre":"Fusible 3,2 A","numero":"","id":"","cantidad":43,"equipo":"General","closet":"Izquierdo","estante":1,"caja":"Caja azul \"Fusibles\"","observacion":"","foto":"Fusible_3_2_A.jpeg"},
 {"nombre":"Fusibles 5 A","numero":"35-006","id":"","cantidad":32,"equipo":"General","closet":"Izquierdo","estante":1,"caja":"Caja azul \"Fusibles\"","observacion":"","foto":"35-006.jpeg"},
@@ -307,6 +307,7 @@
 {"nombre":"BARCODE READER XN10","numero":"","id":"","cantidad":1,"equipo":"XN 10","closet":"IZQUIERDO","estante":3,"caja":"CAJA TRANSPARENTE \"VARIEDAD HEMATO\"","observacion":"","foto":""},
 {"nombre":"BELT X1 (CR)","numero":"6342639001","id":"734-3343","cantidad":1,"equipo":"cobas c 502\ncobas c 701 MSB","closet":"izquierdo","estante":1,"caja":"caja azul \"variedad\"","observacion":"","foto":"734-3343.jpg"},
 {"nombre":"hola","numero":"","id":"","cantidad":"","equipo":"","closet":"","estante":"","caja":"","observacion":"","foto":""},
-{"nombre":"perro","numero":"","id":"","cantidad":"","equipo":"","closet":"","estante":"","caja":"","observacion":"","foto":"perro.png"}
+{"nombre":"perro","numero":"","id":"","cantidad":"","equipo":"","closet":"","estante":"","caja":"","observacion":"","foto":""},
+{"nombre":"peero2","numero":"","id":"","cantidad":"","equipo":"","closet":"","estante":"","caja":"","observacion":"","foto":"peero2.jpg"}
 ]
 }
