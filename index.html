@@ -192,7 +192,7 @@ const NOFOTO = "data:image/svg+xml," + encodeURIComponent(
   "<circle cx='38' cy='43' r='4'/><path d='m26 62 14-12 10 8 8-6 14 10'/></g></svg>");
 
 function card(it){
-  const src = it.foto ? "fotos/" + encodeURIComponent(it.foto) : NOFOTO;
+  const src = it.foto ? "Fotos/" + encodeURIComponent(it.foto) : NOFOTO;
   const chips = [];
   if (txt(it.numero)) chips.push(`<span class="chip"><i>N.º</i>${hl(it.numero)}</span>`);
   if (txt(it.id))     chips.push(`<span class="chip"><i>ID</i>${hl(it.id)}</span>`);
