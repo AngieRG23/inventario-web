@@ -1,5 +1,5 @@
 {
-"actualizado":"27/11/2026 10:02",
+"actualizado":"27/11/2026 10:07",
 "items":[
 {"nombre":"Fusible 3,2 A","numero":"","id":"","cantidad":43,"equipo":"General","closet":"Izquierdo","estante":1,"caja":"Caja azul \"Fusibles\"","observacion":"","foto":"Fusible_3_2_A.jpeg"},
 {"nombre":"Fusibles 5 A","numero":"35-006","id":"","cantidad":32,"equipo":"General","closet":"Izquierdo","estante":1,"caja":"Caja azul \"Fusibles\"","observacion":"","foto":"35-006.jpeg"},
@@ -306,6 +306,7 @@
 {"nombre":"HEAT CUT FILTER","numero":"04904630001","id":"727-1610","cantidad":1,"equipo":"cobas c 303\ncobas c 311\ncobas c 501\ncobas c 502\ncobas c 503\ncobas c 513\ncobas c 701\ncobas c 702","closet":"izquierdo","estante":1,"caja":"caja azul \"cajas varias 3\"","observacion":"","foto":"727-1610.png"},
 {"nombre":"BARCODE READER XN10","numero":"","id":"","cantidad":1,"equipo":"XN 10","closet":"IZQUIERDO","estante":3,"caja":"CAJA TRANSPARENTE \"VARIEDAD HEMATO\"","observacion":"","foto":""},
 {"nombre":"BELT X1 (CR)","numero":"6342639001","id":"734-3343","cantidad":1,"equipo":"cobas c 502\ncobas c 701 MSB","closet":"izquierdo","estante":1,"caja":"caja azul \"variedad\"","observacion":"","foto":"734-3343.jpg"},
-{"nombre":"hola","numero":"","id":"","cantidad":"","equipo":"","closet":"","estante":"","caja":"","observacion":"","foto":""}
+{"nombre":"hola","numero":"","id":"","cantidad":"","equipo":"","closet":"","estante":"","caja":"","observacion":"","foto":""},
+{"nombre":"perro","numero":"","id":"","cantidad":"","equipo":"","closet":"","estante":"","caja":"","observacion":"","foto":"perro.png"}
 ]
 }
